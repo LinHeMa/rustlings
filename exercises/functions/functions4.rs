@@ -7,18 +7,16 @@
 // in the signatures for now. If anything, this is a good way to peek ahead
 // to future exercises!)
 
-// I AM NOT DONE
-
 fn main() {
     let original_price = 51;
     println!("Your sale price is {}", sale_price(original_price));
 }
 
-fn sale_price(price: i32) -> {
+fn sale_price(price: i32) -> u32 {
     if is_even(price) {
-        price - 10
+        (price - 10).try_into().unwrap()
     } else {
-        price - 3
+        (price - 3).try_into().unwrap()
     }
 }
 
