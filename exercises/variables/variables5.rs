@@ -6,7 +6,11 @@
 fn main() {
     let mut number = "T-H-R-E-E"; // don't change this line
     println!("Spell a Number : {}", number);
-    let mut number = 0;
-    number = 3; // don't rename this variable
-    println!("Number plus two is : {}", number + 2);
+
+    {
+        // shadowing: 透過 shadowing 可以重複使用變數
+        let mut number = 0;
+        number = 3; // don't rename this variable
+        println!("Number plus two is : {}", number + 2);
+    }
 }
