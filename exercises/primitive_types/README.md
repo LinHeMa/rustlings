@@ -13,3 +13,5 @@ So, the line let a = ["Are we there yet?"; 100]; initializes the variable a as a
 
 - [Data Types](https://doc.rust-lang.org/stable/book/ch03-02-data-types.html)
 - [The Slice Type](https://doc.rust-lang.org/stable/book/ch04-03-slices.html)
+
+## what is & in rust
