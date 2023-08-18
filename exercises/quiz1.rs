@@ -10,11 +10,15 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
-
+fn calculate_price_of_apples(qty: i32) -> i32 {
+    const price: i32 = 2;
+    const halfPrice: i32 = 1;
+    if qty > 40 {
+        return qty * halfPrice;
+    }
+    return qty * price;
+}
 // Don't modify this function!
 #[test]
 fn verify_test() {
